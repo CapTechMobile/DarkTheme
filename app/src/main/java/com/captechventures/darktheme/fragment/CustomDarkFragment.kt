@@ -21,5 +21,9 @@ class CustomDarkFragment : GroupieFragment() {
         return inflater.inflate(R.layout.fragment_custom_dark, container, false)
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        isCustomDark = true
+        super.onActivityCreated(savedInstanceState)
+    }
 
 }

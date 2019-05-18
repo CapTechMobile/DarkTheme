@@ -6,7 +6,7 @@ import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.user_row.view.*
 
-class UserItem(val user: User) : Item<ViewHolder>() {
+class UserItem(val user: User, val isCustomDark: Boolean) : Item<ViewHolder>() {
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.firstnameTv.text = user.firstName
         viewHolder.itemView.lastNameTv.text = user.lastName
@@ -16,6 +16,6 @@ class UserItem(val user: User) : Item<ViewHolder>() {
     }
 
     override fun getLayout(): Int {
-        return R.layout.user_row
+        return if (isCustomDark)  R.layout.user_row else R.layout.user_row_nodark
     }
 }

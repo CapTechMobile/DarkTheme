@@ -10,6 +10,8 @@ import kotlinx.android.synthetic.main.fragment_smart_dark.*
 
 abstract class GroupieFragment : Fragment() {
 
+    var isCustomDark = false
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         initMessages()
@@ -20,7 +22,7 @@ abstract class GroupieFragment : Fragment() {
 
         val messages = MockRepo.getMessages()
         messages.forEach {
-            adapter.add(UserItem(it))
+            adapter.add(UserItem(it, isCustomDark))
         }
 
         messagesRv.adapter = adapter
