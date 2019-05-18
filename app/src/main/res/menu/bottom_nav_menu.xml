@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/fragment_smart_dark"
+            android:icon="@drawable/ic_smart_dark_18dp"
+            android:title="@string/title_smart_dark"/>
+
+    <item
+            android:id="@+id/fragment_custom_dark"
+            android:icon="@drawable/ic_custom_dark_18dp"
+            android:title="@string/title_custom_dark"/>
+
+    <item
+            android:id="@+id/fragment_settings"
+            android:icon="@drawable/ic_settings_18dp"
+            android:title="@string/title_settings"/>
+
+</menu>
