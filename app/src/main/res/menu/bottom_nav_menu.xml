@@ -12,6 +12,11 @@
             android:title="@string/title_custom_dark"/>
 
     <item
+            android:id="@+id/fragment_webview"
+            android:icon="@drawable/ic_web_18dp"
+            android:title="@string/title_web_view"/>
+
+    <item
             android:id="@+id/fragment_settings"
             android:icon="@drawable/ic_settings_18dp"
             android:title="@string/title_settings"/>

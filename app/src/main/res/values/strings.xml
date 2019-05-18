@@ -2,5 +2,6 @@
     <string name="app_name">DarkTheme</string>
     <string name="title_smart_dark">Smart Dark</string>
     <string name="title_custom_dark">Custom Dark</string>
+    <string name="title_web_view">Webview</string>
     <string name="title_settings">Settings</string>
 </resources>

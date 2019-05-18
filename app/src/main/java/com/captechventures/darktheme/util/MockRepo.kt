@@ -8,17 +8,46 @@ class MockRepo {
     companion object {
         fun getMessages(): Array<User> {
             return arrayOf(
-                User("Alan", "Shih", "FACT: California Tortilla is better than Chipotle.", "9:45 AM", R.drawable.alanshih),
-                User("Chris", "Coyle", "I ate delicious food before I went skiing in Denver.", "7:30 AM", R.drawable.coyle),
-                User("Clinton", "Teegarden", "Remember that line from The Office?", "Yesterday", R.drawable.tee),
-                User("Alex", "Townsend", "I hope the Nats win tonight.", "Friday", R.drawable.alex),
-                User("Alisher", "Pazylbekov", "Google IO was awesome!", "Thursday", R.drawable.alisher),
-                User("Andrew", "Gray", "Did you read the book on Tim Cook?", "Thursday", R.drawable.gray),
-                User("Juan", "Garduno", "Corona is not real Mexican beer.", "Wednesday", R.drawable.juan),
+                User(
+                    "Alan",
+                    "Shih",
+                    "FACT: California Tortilla is better than Chipotle.",
+                    false,
+                    "9:45 AM",
+                    R.drawable.alanshih
+                ),
+                User(
+                    "Chris",
+                    "Coyle",
+                    "I am the next Michael Bay & Steven Spielberg. #academyawardwinner2020",
+                    true,
+                    "7:30 AM",
+                    R.drawable.coyle
+                ),
+                User(
+                    "Clinton",
+                    "Teegarden",
+                    "Oh, it is on, like a prawn who yawns at dawn.",
+                    false,
+                    "Yesterday",
+                    R.drawable.tee
+                ),
+                User("Alex", "Townsend", "I hope the Nats win tonight.", true, "Friday", R.drawable.alex),
+                User("Alisher", "Pazylbekov", "Google IO was awesome!", true, "Thursday", R.drawable.alisher),
+                User(
+                    "Andrew",
+                    "Gray",
+                    "Did you read the book on Tim Cook? It's even better than Steven Job's biography",
+                    true,
+                    "Thursday",
+                    R.drawable.gray
+                ),
+                User("Juan", "Garduno", "Corona is not real Mexican beer.", false, "Wednesday", R.drawable.juan),
                 User(
                     "Parthiv",
                     "Vora",
                     "Be careful of the cloud. They are watching us.",
+                    false,
                     "Tuesday",
                     R.drawable.parthiv
                 ),
@@ -26,10 +55,11 @@ class MockRepo {
                     "Cullen",
                     "Shannon",
                     "About 50% of people pronounce my name incorrectly.",
+                    true,
                     "Tuesday",
                     R.drawable.shannon
                 ),
-                User("Dylan", "Doggett", "I love my Google IO trucker hat!", "5/10/19", R.drawable.dylan)
+                User("Dylan", "Doggett", "I love my Google IO trucker hat!", true, "5/10/19", R.drawable.dylan)
             )
         }
     }

@@ -19,10 +19,16 @@
     </fragment>
 
     <fragment
+            android:id="@+id/fragment_webview"
+            android:name="com.captechventures.darktheme.fragment.WebViewFragment"
+            android:label="WebView Fragment"
+            tools:layout="@layout/fragment_web_view">
+    </fragment>
+
+    <fragment
             android:id="@+id/fragment_settings"
             android:name="com.captechventures.darktheme.fragment.SettingsFragment"
-            android:label="Settings Fragment"
-            tools:layout="@layout/fragment_settings">
+            android:label="Settings Fragment">
     </fragment>
 
 </navigation>

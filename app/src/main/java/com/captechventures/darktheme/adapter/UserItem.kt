@@ -13,9 +13,17 @@ class UserItem(val user: User, val isCustomDark: Boolean) : Item<ViewHolder>() {
         viewHolder.itemView.messageTv.text = user.message
         viewHolder.itemView.profileImageIv.setImageResource(user.resId)
         viewHolder.itemView.dateTv.text = user.date
+
+        if (user.isRead) {
+            viewHolder.itemView.readTv.text = "R";
+            viewHolder.itemView.readIv.setImageResource(if (isCustomDark) R.drawable.ic_all_done_24dp else R.drawable.ic_all_done_nodark_24dp)
+        } else {
+            viewHolder.itemView.readTv.text = "S";
+            viewHolder.itemView.readIv.setImageResource(if (isCustomDark) R.drawable.ic_done_24dp else R.drawable.ic_done_nodark_24dp)
+        }
     }
 
     override fun getLayout(): Int {
-        return if (isCustomDark)  R.layout.user_row else R.layout.user_row_nodark
+        return if (isCustomDark) R.layout.user_row else R.layout.user_row_nodark
     }
 }
