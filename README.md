@@ -4,15 +4,15 @@ A sample application showcasing Dark Theme.
 
 <img src="https://github.com/CapTechMobile/DarkTheme/blob/master/Screenshots/LightTheme.png" width="300">
 
-# Smart Dark - Auto Conversion of Light Theme to Dark
+#### Smart Dark - Auto Conversion of Light Theme to Dark
 
 <img src="https://github.com/CapTechMobile/DarkTheme/blob/master/Screenshots/DarkThemeSmart.png" width="300">
 
-# Custom Dark - Using theme attributes and night-qualified resources.
+#### Custom Dark - Using theme attributes and night-qualified resources.
 
 <img src="https://github.com/CapTechMobile/DarkTheme/blob/master/Screenshots/DarkThemeCustom.png" width="300">
 
-# WebViews using Smart Dark
+#### WebViews using Smart Dark
 
 <img src="https://github.com/CapTechMobile/DarkTheme/blob/master/Screenshots/LightThemeWebView.png" width="300"><img src="https://github.com/CapTechMobile/DarkTheme/blob/master/Screenshots/DarkThemeWebView.png" width="300">
 
