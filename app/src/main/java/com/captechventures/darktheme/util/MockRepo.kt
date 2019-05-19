@@ -37,7 +37,7 @@ class MockRepo {
                 User(
                     "Andrew",
                     "Gray",
-                    "Did you read the book on Tim Cook? It's even better than Steven Job's biography",
+                    "Did you read the book on Tim Cook? It's even better than Steve Job's biography",
                     true,
                     "Thursday",
                     R.drawable.gray

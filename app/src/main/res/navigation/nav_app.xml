@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/fragment_smart_dark">
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/fragment_smart_dark">
 
     <fragment
             android:id="@+id/fragment_custom_dark"
@@ -12,10 +12,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/fragment_smart_dark"
-        android:name="com.captechventures.darktheme.fragment.SmartDarkFragment"
-        android:label="Smart Dark Fragment"
-        tools:layout="@layout/fragment_smart_dark">
+            android:id="@+id/fragment_smart_dark"
+            android:name="com.captechventures.darktheme.fragment.SmartDarkFragment"
+            android:label="Smart Dark Fragment"
+            tools:layout="@layout/fragment_smart_dark">
     </fragment>
 
     <fragment
