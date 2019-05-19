@@ -31,11 +31,10 @@ class ThemeHelper {
                 LIGHT_MODE -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 DARK_MODE -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 DEFAULT_MODE -> {
-                    if (BuildCompat.isAtLeastQ()) {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                    } else {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY)
-                    }
+                    AppCompatDelegate.setDefaultNightMode(
+                        if (BuildCompat.isAtLeastQ()) AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                        else AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
+                    )
                 }
             }
         }
